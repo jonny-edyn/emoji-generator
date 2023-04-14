@@ -23,7 +23,7 @@ form.addEventListener('submit', async (e) => {
       const { image } = await response.json();
 
       const result = document.querySelector('#result');
-      result.innerHTML = `<img src="${image}" width="512" />`;
+      result.innerHTML = `<img src="${image}" width="300" />`;
     } else {
       const err = await response.text();
       alert(err);
